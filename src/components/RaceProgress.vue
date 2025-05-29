@@ -1,3 +1,7 @@
+<!-- 
+  a simple progress bar showing race completions
+-->
+
 <template>
   <div class="race-progress">
     <div class="progress-info">

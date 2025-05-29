@@ -1,3 +1,9 @@
+<!-- 
+  showing 1 round of race with all horses
+  each horse moves along  track and also
+  getting data from the store 
+-->
+
 <template>
   <div class="race-round">
     <div class="round-header">
@@ -60,7 +66,7 @@ export default {
     function getDurationFor(horseId) {
       const entry = rawTimes.value.find(rt => rt.id === horseId);
       if (!entry) return 5;
-      return (entry.rawTime / minRaw.value) * 5;  // Increased to 5 seconds base
+      return (entry.rawTime / minRaw.value) * 5; 
     }
 
     return {
@@ -83,7 +89,6 @@ export default {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-
 .round-header {
   display: flex;
   justify-content: space-between;
@@ -92,14 +97,12 @@ export default {
   padding-bottom: 8px;
   border-bottom: 1px solid #eee;
 }
-
 .round-info {
   display: flex;
   gap: 16px;
   font-size: 14px;
   color: #666;
 }
-
 .horses-track {
   border: 1px solid #eee;
   border-radius: 8px;

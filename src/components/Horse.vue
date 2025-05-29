@@ -1,3 +1,7 @@
+<!-- 
+  displayss a horse moving on track
+-->
+
 <template>
   <div class="horse-container">
     <div class="horse-info">

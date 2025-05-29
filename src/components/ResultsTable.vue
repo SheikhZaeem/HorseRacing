@@ -1,3 +1,7 @@
+<!-- 
+  shows top 3 horses for every each round
+-->
+
 <template>
   <div class="results-table">
     <table>
@@ -14,7 +18,7 @@
         <tr v-for="(result, idx) in results" :key="result.round">
           <td class="round-number">#{{ result.round }}</td>
           <td class="distance">{{ getRoundDistance(idx) }}m</td>
-          
+
           <td>
             <div class="winner-info">
               <div class="color-indicator" :style="{ backgroundColor: getHorseColor(result.winnerName) }"></div>
@@ -67,7 +71,6 @@ export default {
 
 <style scoped>
 .results-table {
-
   overflow-x: auto;
 }
 
@@ -75,7 +78,6 @@ table {
   width: 100%;
   border-collapse: collapse;
 }
-
 th, td {
   padding: 12px 15px;
   text-align: left;
@@ -93,12 +95,10 @@ th {
   font-size: 1.2em;
   color: #3498db;
 }
-
 .distance {
   font-weight: bold;
   color: #e74c3c;
 }
-
 .winner-info {
   display: flex;
   align-items: center;
@@ -111,12 +111,10 @@ th {
   margin-right: 10px;
   border: 1px solid #ddd;
 }
-
 .winner-name {
   font-weight: 600;
   color: #2c3e50;
 }
-
 .winner-condition {
   font-weight: bold;
   color: #27ae60;
@@ -134,7 +132,6 @@ th {
   border-radius: 6px;
   text-align: center;
 }
-
 .pos-1 {
   background: linear-gradient(to bottom, #f1c40f, #f39c12);
   order: 2;
@@ -149,18 +146,15 @@ th {
   background: linear-gradient(to bottom, #e67e22, #d35400);
   order: 3;
 }
-
 .position {
   font-weight: bold;
   font-size: 0.9em;
   margin-bottom: 5px;
 }
-
 .horse-name {
   font-weight: 500;
   margin-bottom: 3px;
 }
-
 .horse-condition {
   font-size: 0.9em;
   color: #2c3e50;

@@ -1,3 +1,6 @@
+// this file handles all the data for the horse races
+// such as keeping track of horses, races, and results
+
 import { defineStore } from 'pinia';
 
 function getRandomColor() {

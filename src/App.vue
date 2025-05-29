@@ -1,8 +1,14 @@
+<!-- 
+  puts everything together
+  eg:  buttons and controls for the game
+  also shows race progress and results 
+-->
+
 <template>
   <div id="app">
     <div class="app-header">
-      <h1>INSIDER HORSE RACING</h1>
-      <p>Professional horse racing simulation</p>
+      <h1> HORSE RACING GAME</h1>
+      <p>Press Generate Horse & Schedule to start.</p>
     </div>
 
     <div class="controls">
