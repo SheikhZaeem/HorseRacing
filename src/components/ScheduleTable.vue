@@ -55,3 +55,92 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.schedule-table {
+  overflow-x: auto;
+  font-size: 0.9em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px 10px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.round-info {
+  min-width: 60px;
+  vertical-align: top;
+  padding-top: 12px;
+}
+
+.round-number {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #3498db;
+}
+
+.distance {
+  font-size: 0.85em;
+  color: #7f8c8d;
+  margin-top: 3px;
+}
+
+.horse-entries {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+}
+
+.horse-entry {
+  display: flex;
+  align-items: center;
+  min-height: 24px;
+}
+
+.color-indicator {
+  flex-shrink: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 6px;
+  border: 1px solid #ddd;
+}
+
+.horse-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+}
+
+.horse-name {
+  font-size: 0.85em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 70px;
+}
+
+.horse-condition {
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #2c3e50;
+  background: #f0f4f8;
+  border-radius: 3px;
+  padding: 0 4px;
+  min-width: 24px;
+  text-align: center;
+}
+</style>
