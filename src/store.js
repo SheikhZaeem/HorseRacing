@@ -1,6 +1,7 @@
 // this file handles all the data for the horse races
 // such as keeping track of horses, races, and results
 
+
 import { defineStore } from 'pinia';
 
 function getRandomColor() {
@@ -15,9 +16,9 @@ function getRandomColor() {
 export const useHorseStore = defineStore('horse', {
   state: () => ({
     allHorses: [],     //array of { id, name, color, condition }
-    schedule: [],      //{ distance, horses: [horseId, ...] }
-    roundTimes: [],    //[[ { id, rawTime }, … ], …] for each round
-    results: []        //  { round: number, winnerName: string }
+    schedule: [],      
+    roundTimes: [],    
+    results: []     
   }),
   actions: {
     generateHorses() {
@@ -55,7 +56,7 @@ export const useHorseStore = defineStore('horse', {
             const round = this.schedule[i];
             const timesArr = round.horses.map(id => {
             const horse = this.allHorses.find(h => h.id === id);
-            const raw = round.distance / horse.condition + Math.random() * 0.8;  //prevent ties
+            const raw = round.distance / horse.condition + Math.random() * 0.8;  //it prevents ties
             return { id, rawTime: raw };
             });
 

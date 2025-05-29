@@ -1,7 +1,6 @@
 <!-- 
   a simple progress bar showing race completions
 -->
-
 <template>
   <div class="race-progress">
     <div class="progress-info">
@@ -25,6 +24,7 @@ export default {
 }
 </script>
 
+<!-- style for race progress bar -->
 <style scoped>
 .race-progress {
   margin-bottom: 25px;

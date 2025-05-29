@@ -68,7 +68,7 @@ export default {
   }
 }
 </script>
-
+<!-- css style for results table to declare winner -->
 <style scoped>
 .results-table {
   overflow-x: auto;

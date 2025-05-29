@@ -112,7 +112,7 @@ export default {
         const maxRaw = Math.max(...timesArr.map(e => e.rawTime));
         const slowestDurationSec = (maxRaw / minRaw) * 5;
         
-        //wait for slowest horse to finish
+        //waiting for slowest horse to finish
         await new Promise(res => 
           setTimeout(res, (slowestDurationSec + 1) * 1000)
         );

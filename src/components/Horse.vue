@@ -1,7 +1,6 @@
 <!-- 
   displayss a horse moving on track
 -->
-
 <template>
   <div class="horse-container">
     <div class="horse-info">
@@ -50,7 +49,7 @@ export default {
 };
 </script>
 
-
+<!-- style for the horse component -->
 <style scoped>
 .horse-container {
   margin: 12px 0;

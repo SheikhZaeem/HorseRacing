@@ -2,7 +2,6 @@
   displays horse names and colors and conditions
   in a table format
 -->
-
 <template>
   <div class="schedule-table">
     <h2>RACE SCHEDULE</h2>

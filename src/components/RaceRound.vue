@@ -39,7 +39,6 @@ export default {
   },
 
   setup(props) {
-
     const store = useHorseStore();
     const round = computed(() => store.schedule[props.roundIndex]);
     const roundNumber = computed(() => props.roundIndex + 1);
