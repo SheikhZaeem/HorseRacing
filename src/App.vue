@@ -7,7 +7,7 @@
 <template>
   <div id="app">
     <div class="app-header">
-      <h1> HORSE RACING GAME</h1>
+      <h1>HORSE RACING GAME</h1>
       <p>Press Generate Horse & Schedule to start.</p>
     </div>
 
@@ -193,19 +193,57 @@ export default {
 }
 
 #app {
+    background: #f5f5f5;
   max-width: 1400px;
   margin: 0 auto;
   padding: 20px;
   font-family: Arial, sans-serif;
 }
 .controls {
-  margin-bottom: 20px;
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+  justify-content: center;
 }
 .controls button {
-  margin-right: 10px;
-  padding: 10px 20px;
+  padding: 12px 25px;
   font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
+
+.controls button:first-child {
+  background-color: #4CAF50; 
+  color: white;
+}
+
+.controls button:last-child {
+  background-color: #2196F3; 
+  color: white;
+}
+
+.controls button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.controls button:active {
+  transform: translateY(1px);
+}
+.controls button:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
 .schedule ul,
 .final-results ul {
   list-style: none;

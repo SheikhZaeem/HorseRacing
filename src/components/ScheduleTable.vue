@@ -65,11 +65,16 @@ export default {
 .schedule-table {
   overflow-x: auto;
   font-size: 0.9em;
+  background: #e8f4f8; 
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
+  background: white; 
 }
 
 th, td {

@@ -23,14 +23,11 @@ HorseRacing/
     ├── main.js           ← App entry point (creates Vue app + Pinia store)
     ├── App.vue           ← Root component (buttons, schedule, race container)
     ├── store.js          ← Pinia store (horse generation, schedule, times)
-    ├── assets/
-    │   └── styles.css    ← Global CSS (background, basic styling)
     └── components/
         ├── Horse.vue     ← Single‐horse component (animates a colored block)
         ├── RaceRound.vue ← Displays 10 horses running a single round
         └── Results.vue   ← Lists winners of each round
-
-
+        
 ---
 
 ## How the game works

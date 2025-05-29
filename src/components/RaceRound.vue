@@ -104,9 +104,9 @@ export default {
   color: #666;
 }
 .horses-track {
-  border: 1px solid #eee;
+  background: #d4e6f1;
+  border: 2px solid #5d9cec;
   border-radius: 8px;
   padding: 16px;
-  background-color: #fafafa;
 }
 </style>
