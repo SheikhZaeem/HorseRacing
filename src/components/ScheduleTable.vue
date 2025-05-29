@@ -31,3 +31,27 @@
     </table>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'ScheduleTable',
+  props: {
+    schedule: Array,
+    allHorses: Array
+  },
+  methods: {
+    getHorseName(id) {
+      const horse = this.allHorses.find(h => h.id === id);
+      return horse ? horse.name : 'Unknown';
+    },
+    getHorseColor(id) {
+      const horse = this.allHorses.find(h => h.id === id);
+      return horse ? horse.color : '#ccc';
+    },
+    getHorseCondition(id) {
+      const horse = this.allHorses.find(h => h.id === id);
+      return horse ? horse.condition : 0;
+    }
+  }
+}
+</script>
