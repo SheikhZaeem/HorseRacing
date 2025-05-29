@@ -13,8 +13,7 @@ This is a horse racing simulation built using **Vue 3**, **Pinia**, and **CSS an
 
 
 ## 📁 Folder Structure
----
-
+```
 HorseRacing/
 ├── README.md             ← (You are here)
 ├── package.json          ← Project metadata & dependencies
@@ -28,8 +27,8 @@ HorseRacing/
         ├── Horse.vue     ← Single‐horse component (animates a colored block)
         ├── RaceRound.vue ← Displays 10 horses running a single round
         └── Results.vue   ← Lists winners of each round
-        
----
+``` 
+
 
 ## How the game works
 
