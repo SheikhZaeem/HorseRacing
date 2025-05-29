@@ -13,12 +13,12 @@
     </div>
 
     <div class="dashboard" v-if="scheduleGenerated">
-      <!-- Left: Schedule -->
+      <!-- Left side Schedule -->
       <div class="schedule-container">
         <ScheduleTable :schedule="schedule" :allHorses="allHorses" />
       </div>
       
-      <!-- Right: Race Animation -->
+      <!-- Race Animation on right -->
        <div class="race-container">
           <RaceProgress 
             v-if="raceRunning"
@@ -101,14 +101,14 @@ export default {
         const timesArr = store.roundTimes[i];
         if (!timesArr || timesArr.length === 0) continue;
 
-        // Calculate maximum duration needed
+        //maximum duration needed
         const minRaw = Math.min(...timesArr.map(e => e.rawTime));
         const maxRaw = Math.max(...timesArr.map(e => e.rawTime));
-        const slowestDurationSec = (maxRaw / minRaw) * 5;  // Increased to 5 seconds base
+        const slowestDurationSec = (maxRaw / minRaw) * 5;
         
-        // Wait for slowest horse to finish
+        //wait for slowest horse to finish
         await new Promise(res => 
-          setTimeout(res, (slowestDurationSec + 1) * 1000)  // Added 1 second buffer
+          setTimeout(res, (slowestDurationSec + 1) * 1000)
         );
       }
 
