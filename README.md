@@ -26,7 +26,7 @@ This is a horse racing simulation built using **Vue 3**, **Pinia**, and **CSS an
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/HorseRacing.git
+git clone https://github.com/SheikhZaeem/HorseRacing.git
 cd HorseRacing
 
 # Install dependencies
@@ -37,7 +37,10 @@ npm run serve
 
 The app will be running at http://localhost:8080
 
+#Optional
+
 ## Tech Stack
+
 Vue 3 – Composition API, Single File Components
 
 Pinia – State management
