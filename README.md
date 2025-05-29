@@ -2,6 +2,9 @@
 
 This is a horse racing simulation built using **Vue 3**, **Pinia**, and **CSS animations**. It generates 20 horses with random attributes, schedules 6 race rounds, and animates each race based on the horses' calculated performance.
 
+<br />
+<br />
+
 ## Features of Game
 
 - Generates **20 horses** with unique names, colors, and "condition"
