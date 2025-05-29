@@ -131,3 +131,143 @@ export default {
   }
 };
 </script>
+
+<style>
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 30% 70%; 
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.schedule-container, .race-container {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.race-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.waiting-message {
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+}
+
+.waiting-message .icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.waiting-message h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.waiting-message p {
+  font-size: 1.1rem;
+}
+
+.results-container {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 30px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+#app {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+.controls {
+  margin-bottom: 20px;
+}
+.controls button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+.schedule ul,
+.final-results ul {
+  list-style: none;
+  padding: 0;
+}
+.schedule li,
+.final-results li {
+  margin: 5px 0;
+}
+.race-progress {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.progress-bar {
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(to right, #4caf50, #8bc34a);
+  transition: width 0.5s ease;
+}
+.app-header {
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+@media (max-width: 1200px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1200px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+  
+  .schedule-container {
+    order: 2;
+  }
+  
+  .race-container {
+    order: 1;
+  }
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>
