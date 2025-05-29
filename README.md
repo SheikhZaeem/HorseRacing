@@ -12,9 +12,8 @@ This is a horse racing simulation built using Vue 3, Pinia and CSS. It generates
   
   
 ## Screenshots  
-<img width="928" alt="Screenshot 2025-05-29 at 9 52 49 PM" src="https://github.com/user-attachments/assets/e5f488b3-a64d-493b-91c9-a0232ef36d65" />
+<img width="928" alt="Screenshot 2025-05-29 at 9 52 49 PM" src="https://github.com/user-attachments/assets/e5f488b3-a64d-493b-91c9-a0232ef36d65" />  
 
-      
 <img width="925" alt="Screenshot 2025-05-29 at 9 52 57 PM" src="https://github.com/user-attachments/assets/325b5c7d-45ff-47a2-a849-a108ab72a09f" />
   
 ## Setup & Run Locally
