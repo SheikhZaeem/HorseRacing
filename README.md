@@ -1,6 +1,7 @@
 # Horse Racing Game 
 
 This is a horse racing simulation built using **Vue 3**, **Pinia**, and **CSS animations**. It generates 20 horses with random attributes, schedules 6 race rounds, and animates each race based on the horses' calculated performance.
+<br >
 <br />
 
 ## Features of Game
@@ -11,14 +12,16 @@ This is a horse racing simulation built using **Vue 3**, **Pinia**, and **CSS an
 - Displays one round at a time
 - Final results are then displayed
 - 
+<br >
 <br />
 ## Screenshots
-<br />
+
 
 <img width="928" alt="Screenshot 2025-05-29 at 9 52 49 PM" src="https://github.com/user-attachments/assets/e5f488b3-a64d-493b-91c9-a0232ef36d65" />
 
 <img width="925" alt="Screenshot 2025-05-29 at 9 52 57 PM" src="https://github.com/user-attachments/assets/325b5c7d-45ff-47a2-a849-a108ab72a09f" />
 
+<br >
 <br />
 ## Setup & Run Locally
 
@@ -26,6 +29,7 @@ This is a horse racing simulation built using **Vue 3**, **Pinia**, and **CSS an
 
 - Node.js (v14+)
 - npm
+<br >
 <br />
 ### Install and Run
 
@@ -43,6 +47,7 @@ npm run serve
 The app will be running at http://localhost:8080
 
 ```
+<br >
 <br />
 ## Optional
 
