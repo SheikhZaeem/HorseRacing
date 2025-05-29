@@ -47,3 +47,87 @@
     </div>
   </div>
 </template>
+<script>
+import { ref, computed } from 'vue';
+import { useHorseStore } from './store';
+import RaceRound from './components/RaceRound.vue';
+import ScheduleTable from './components/ScheduleTable.vue';
+import ResultsTable from './components/ResultsTable.vue';
+import RaceProgress from './components/RaceProgress.vue';
+
+
+export default {
+  name: 'App',
+  components: { 
+    RaceRound,
+    ScheduleTable,
+    ResultsTable,
+    RaceProgress
+  },
+  setup() {
+    const store = useHorseStore();
+    const scheduleGenerated = ref(false);
+    const raceRunning = ref(false);
+    const currentRound = ref(0);
+    const progressPercentage = ref(0);
+
+    const schedule = computed(() => store.schedule);
+    const results = computed(() => store.results);
+    const allHorses = computed(() => store.allHorses);
+
+    function getHorseName(id) {
+      const h = store.allHorses.find(x => x.id === id);
+      return h ? h.name : '';
+    }
+
+    function generateGame() {
+      progressPercentage.value = 0;
+      store.generateHorses();
+      store.generateSchedule();
+      store.computeAllRoundTimesAndWinners();
+      scheduleGenerated.value = true;
+      currentRound.value = 0;
+      raceRunning.value = false;
+    }
+
+    async function startRace() {
+      raceRunning.value = true;
+      progressPercentage.value = 0;
+
+      for (let i = 0; i < schedule.value.length; i++) {
+        currentRound.value = i;
+        progressPercentage.value = Math.round(((i + 1) / schedule.value.length) * 100);
+
+        const timesArr = store.roundTimes[i];
+        if (!timesArr || timesArr.length === 0) continue;
+
+        // Calculate maximum duration needed
+        const minRaw = Math.min(...timesArr.map(e => e.rawTime));
+        const maxRaw = Math.max(...timesArr.map(e => e.rawTime));
+        const slowestDurationSec = (maxRaw / minRaw) * 5;  // Increased to 5 seconds base
+        
+        // Wait for slowest horse to finish
+        await new Promise(res => 
+          setTimeout(res, (slowestDurationSec + 1) * 1000)  // Added 1 second buffer
+        );
+      }
+
+    raceRunning.value = false;
+    progressPercentage.value = 100;
+    }
+
+    return {
+      scheduleGenerated,
+      raceRunning,
+      currentRound,
+      progressPercentage,
+      schedule,
+      results,
+      allHorses,
+      generateGame,
+      startRace,
+      getHorseName
+    };
+  }
+};
+</script>
