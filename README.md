@@ -11,9 +11,9 @@ This is a horse racing simulation built using **Vue 3**, **Pinia**, and **CSS an
 - Final results are then displayed
 
 ## Screenshots
-<img width="927" alt="Screenshot 2025-05-29 at 9 49 01 PM" src="https://github.com/user-attachments/assets/d91e4109-c728-4589-934c-7142c48a27dd" />
+<img width="928" alt="Screenshot 2025-05-29 at 9 52 49 PM" src="https://github.com/user-attachments/assets/e5f488b3-a64d-493b-91c9-a0232ef36d65" />
 
-<img width="906" alt="Screenshot 2025-05-29 at 9 50 22 PM" src="https://github.com/user-attachments/assets/d4540a6a-0b64-4dc4-8013-107ca5ce85ba" />
+<img width="925" alt="Screenshot 2025-05-29 at 9 52 57 PM" src="https://github.com/user-attachments/assets/325b5c7d-45ff-47a2-a849-a108ab72a09f" />
 
 ## Setup & Run Locally
 
