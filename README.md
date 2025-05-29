@@ -37,9 +37,11 @@ npm run serve
 
 The app will be running at http://localhost:8080
 
-#Optional
+```
 
-## Tech Stack
+## Optional
+
+### Tech Stack
 
 Vue 3 – Composition API, Single File Components
 
@@ -49,6 +51,6 @@ HTML5 + CSS3 for layout and animation
 
 JavaScript (ES6+) for game logic
 
-## Build
+### Build
 npm run build
 
