@@ -9,7 +9,7 @@ This is a horse racing simulation built using **Vue 3**, **Pinia**, and **CSS an
 - Animates each race
 - Displays one round at a time
 - Final results are then displayed
-- 
+  
   
 ## Screenshots  
 <img width="928" alt="Screenshot 2025-05-29 at 9 52 49 PM" src="https://github.com/user-attachments/assets/e5f488b3-a64d-493b-91c9-a0232ef36d65" />
