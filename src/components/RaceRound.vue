@@ -62,7 +62,7 @@ export default {
       if (!entry) return 5;
       return (entry.rawTime / minRaw.value) * 5;  // Increased to 5 seconds base
     }
-    
+
     return {
       round,
       roundNumber,
@@ -74,3 +74,36 @@ export default {
 };
 
 </script>
+
+<style scoped>
+.race-round {
+  margin-bottom: 32px;
+  padding: 16px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.round-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.round-info {
+  display: flex;
+  gap: 16px;
+  font-size: 14px;
+  color: #666;
+}
+
+.horses-track {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #fafafa;
+}
+</style>
