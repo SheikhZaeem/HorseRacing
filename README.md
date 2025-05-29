@@ -13,6 +13,7 @@ This is a horse racing simulation built using **Vue 3**, **Pinia**, and **CSS an
 
 
 ## 📁 Folder Structure
+---
 
 HorseRacing/
 ├── README.md             ← (You are here)
