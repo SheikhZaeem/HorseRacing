@@ -44,13 +44,13 @@ The app will be running at http://localhost:8080
 
 ### Tech Stack
 
-Vue 3 – Composition API, Single File Components
+Vue 3 
 
-Pinia – State management
+Pinia
 
-HTML5 + CSS3 for layout and animation
+HTML5 + CSS
 
-JavaScript (ES6+) for game logic
+JavaScript
 
 ### Build
 npm run build
